@@ -1,7 +1,7 @@
 {
-  "name": "stencil-starter-project-name",
+  "name": "stencil-datepicker-component",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Stencil datepicker component",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -15,14 +15,31 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build --docs",
-    "start": "stencil build --dev --watch --serve",
+    "build": "stencil build",
+    "build-dev": "stencil build --dev --watch",
+    "start": "node server.js",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "lint:ts": "tslint -p tsconfig.json -c tslint.json",
+    "lint:ts-fix": "tslint --fix -p tsconfig.json -c tslint.json",
+    "lint:styles": "stylelint \"src/**/*.{css,scss,less,pcss}\" --cache --cache-location \"./.stylelint-cache\"",
+    "lint:styles-fix": "stylelint \"src/**/*.{css,scss,less,pcss}\" --fix"
+  },
+  "dependencies": {
+    "@stencil/core": "^1.12.2",
+    "@stencil/router": "^1.0.1",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "stencil": "0.0.5"
   },
   "devDependencies": {
-    "@stencil/core": "^1.12.2"
+    "stylelint": "^13.1.0",
+    "tslint": "^6.0.0",
+    "tslint-language-service": "^0.9.9",
+    "tslint-react": "^4.2.0",
+    "@stencil/less": "^1.0.0",
+    "moment": "^2.24.0"
   },
   "license": "MIT"
 }
