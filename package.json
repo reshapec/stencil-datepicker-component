@@ -39,7 +39,7 @@
     "tslint-language-service": "^0.9.9",
     "tslint-react": "^4.2.0",
     "@stencil/less": "^1.0.0",
-    "moment": "^2.24.0"
+    "moment": "^2.29.4"
   },
   "license": "MIT"
 }
