@@ -29,7 +29,7 @@
   "dependencies": {
     "@stencil/core": "^1.12.2",
     "@stencil/router": "^1.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "node-fetch": "^2.6.0",
     "stencil": "0.0.5"
   },
